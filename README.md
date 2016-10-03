@@ -1,6 +1,7 @@
-# programming-challenges
+# Programming Challenges
 
-My solutions to various programming challenges around the web, such as [Codingame](https://www.codingame.com/) and [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/)
+My solutions to various programming challenges around the web, such as [Codingame](https://www.codingame.com/) and [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/).
+They're probably not the most efficient, but they work and the objective is learning and having fun coding. 
 
 
 ## Solved challenges

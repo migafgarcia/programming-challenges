@@ -18,4 +18,4 @@ They're probably not the most efficient, but they work and the objective is lear
 |[CodinGame](https://www.codingame.com/)|[Power of Thor - Episode 1](https://www.codingame.com/training/easy/power-of-thor-episode-1)|[power_of_thor_episode_1.c](https://github.com/migafgarcia/programming-challenges/blob/master/Codingame/easy/power_of_thor_episode_1.c)| Easy |
 |[CodinGame](https://www.codingame.com/)|[Temperatures](https://www.codingame.com/training/easy/temperatures)|[temperatures.c](https://github.com/migafgarcia/programming-challenges/blob/master/Codingame/easy/temperatures.c)| Easy |
 |[CodinGame](https://www.codingame.com/)|The Bridge - Episode 1|[the_bridge_episode_1.c](https://github.com/migafgarcia/programming-challenges/blob/master/Codingame/easy/the_bridge_episode_1.c)| Easy |
-
+|[CodinGame](https://www.codingame.com/)|[There is no Spoon - Episode 1](https://www.codingame.com/training/medium/there-is-no-spoon-episode-1)|[ThereIsNoSpoonEpisode1.java](https://github.com/migafgarcia/programming-challenges/blob/master/Codingame/medium/ThereIsNoSpoonEpisode1.java)| Medium |

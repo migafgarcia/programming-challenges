@@ -5,7 +5,6 @@ They're probably not the most efficient, but they work and the objective is lear
 
 ## Profiles
 - [CodinGame profile](https://www.codingame.com/profile/94e9b230c03bc7c3d19a6107e0e828012758811)
-- [Reddit profile](https://www.reddit.com/user/migafgarcia/)
 
 ## Solved challenges
 

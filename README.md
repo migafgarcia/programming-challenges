@@ -1,7 +1,9 @@
 # Programming Challenges
 
-My solutions to various programming challenges around the web, such as [CodinGame](https://www.codingame.com/) and [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/).
-They're probably not the most efficient, but they work and the objective is learning and having fun coding. 
+My solutions to various programming challenges around the web, such as [CodinGame](https://www.codingame.com/), [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/) and [Google Code Jam](https://code.google.com/codejam/).
+
+WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
+
 
 ## Profiles
 - [CodinGame profile](https://www.codingame.com/profile/94e9b230c03bc7c3d19a6107e0e828012758811)

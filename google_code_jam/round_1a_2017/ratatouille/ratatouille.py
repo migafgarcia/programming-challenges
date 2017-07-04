@@ -36,32 +36,31 @@ for case in range(t):
 
 	c = 0
 
-	bounds = [[tuple() for x in range(p)] for y in range(n)]
+	bounds = [list() for y in range(n)]
 
 	for package in range(p):
 		for ingredient in range(n):
 			current = get_bounds(r[ingredient], q[ingredient][package])
 
 			if current[0] <= current[1]:
-				bounds[ingredient][package] = (current[0], current[1], False)
+				bounds[ingredient].append((current[0], current[1]))
 
-	# without binary search
-	for bound in bounds[0]:
-		if len(bound) == 0:
-			continue
-		flag = True
-		for ingredient in range(1, n):
-			inner_flag = False
-			for package in range(p):
-				if len(bounds[ingredient][package]) == 0 or bounds[ingredient][package][2]:
-					continue
-				if bounds_overlap(bound, bounds[ingredient][package]):
-					inner_flag = True
+	used = [[False for x in range(len(bounds[y]))] for y in range(len(bounds))] 
+
+	for bound in range(len(bounds[0])):
+		to_use = [(0, bound)]
+		for i in range(1, len(bounds)):
+			for j in range(len(bounds[i])):
+				if not used[i][j] and bounds_overlap(bounds[0][bound], bounds[i][j]):
+					to_use.append((i,j))
 					break
-			if not inner_flag:
-				flag = False
-				break
-		if flag:
+		if len(to_use) == n:
 			c += 1
+			for i in to_use:
+				used[i[0]][i[1]] = True
+
+
+
+
 
 	print(c)

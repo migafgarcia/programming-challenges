@@ -8,32 +8,30 @@
  **/
 int main()
 {
-    int road; // the length of the road before the gap.
+    int road;       // the length of the road before the gap.
     scanf("%d", &road);
-    int gap; // the length of the gap.
+    int gap;        // the length of the gap.
     scanf("%d", &gap);
-    int platform; // the length of the landing platform.
+    int platform;       // the length of the landing platform.
     scanf("%d", &platform);
 
     // game loop
     while (1) {
-        
-        
-        int speed; // the motorbike's speed.
+
+        int speed;  // the motorbike's speed.
         scanf("%d", &speed);
-        int x; // the position on the road of the motorbike.
+        int x;      // the position on the road of the motorbike.
         scanf("%d", &x);
-        if(x + speed >= road + gap && x < road)
+        if (x + speed >= road + gap && x < road)
             printf("JUMP\n");
-        else if(speed < gap + 1 && x < road)
+        else if (speed < gap + 1 && x < road)
             printf("SPEED\n");
-        else if(speed > gap + 1 && x < road)
+        else if (speed > gap + 1 && x < road)
             printf("SLOW\n");
-        
-        else if(x >= road + gap) {
+
+        else if (x >= road + gap) {
             printf("SLOW\n");
-        }
-        else {
+        } else {
             printf("WAIT\n");
         }
 

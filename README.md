@@ -38,10 +38,10 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | Challenge | Solution | Difficulty | 
 |-----------|----------|------------|
 | [Linked Lists: Detect a Cycle](https://www.hackerrank.com/challenges/ctci-linked-list-cycle) | [detect_a_cycle.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/detect_a_cycle.py) | Easy | 
-| [Stacks: Balanced Brackets](https://www.hackerrank.com/challenges/ctci-balanced-brackets) | [balanced_brackets.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/balanced_brackets.c) | Easy | 
 | [Hash Tables: Ransom Note](https://www.hackerrank.com/challenges/ctci-ransom-note) | [ransom_note.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/ransom_note.py) | Easy | 
 | [Arrays: Left Rotation](https://www.hackerrank.com/challenges/ctci-array-left-rotation) | [left_rotation.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/left_rotation.c) | Easy | 
 | [Strings: Making Anagrams](https://www.hackerrank.com/challenges/ctci-making-anagrams) | [MakingAnagrams.java](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/MakingAnagrams.java) | Easy | 
+| [Stacks: Balanced Brackets](https://www.hackerrank.com/challenges/ctci-balanced-brackets) | [balanced_brackets.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/balanced_brackets.c) | Medium | 
 | [Tries: Contacts](https://www.hackerrank.com/challenges/ctci-contacts) | [Contacts.java](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/Contacts.java) | Hard | 
 | [DFS: Connected Cell in a Grid](https://www.hackerrank.com/challenges/ctci-connected-cell-in-a-grid) | [connected_cell.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/connected_cell.c) | Hard | 
 | [Merge Sort: Counting Inversions](https://www.hackerrank.com/challenges/ctci-merge-sort) | [counting_inversions.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/counting_inversions.c) | Hard | 

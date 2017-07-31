@@ -25,6 +25,6 @@ boolean checkAux(Node node, int min, int max) {
     if(node.data <= min || node.data >= max)
         return false;
     
-    return checkAux(node.left, min, node.data < max ? node.data : max) && checkAux(node.right, node.data > min ? node.data : min, max);
+    return checkAux(node.left, min, node.data) && checkAux(node.right, node.data, max);
 }
  

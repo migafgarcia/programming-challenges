@@ -49,4 +49,5 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Tries: Contacts](https://www.hackerrank.com/challenges/ctci-contacts) | [Contacts.java](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/Contacts.java) | Hard | 
 | [DFS: Connected Cell in a Grid](https://www.hackerrank.com/challenges/ctci-connected-cell-in-a-grid) | [connected_cell.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/connected_cell.c) | Hard | 
 | [Merge Sort: Counting Inversions](https://www.hackerrank.com/challenges/ctci-merge-sort) | [counting_inversions.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/counting_inversions.c) | Hard | 
+| [Heaps: Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median) | [running_median.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/running_median.c) | Hard | 
 

@@ -51,3 +51,9 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Merge Sort: Counting Inversions](https://www.hackerrank.com/challenges/ctci-merge-sort) | [counting_inversions.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/counting_inversions.c) | Hard | 
 | [Heaps: Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median) | [running_median.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/running_median.c) | Hard | 
 
+## [LeetCode](https://leetcode.com/) 
+
+| Challenge | Solution | Difficulty | 
+|-----------|----------|------------|
+| [Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/ValidNumber.java) | Hard |
+

@@ -55,6 +55,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Merge Sort: Counting Inversions](https://www.hackerrank.com/challenges/ctci-merge-sort) | [counting_inversions.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/counting_inversions.c) | Hard | 
 | [Heaps: Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median) | [running_median.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/running_median.c) | Hard | 
 | [DP: Coin Change](https://www.hackerrank.com/challenges/ctci-coin-change) | [coin_change.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/coin_change.py) | Hard | 
+| [BFS: Shortest Reach in a Graph](https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach) | [shortest_reach.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/shortest_reach.py) | Hard | 
 
 ## [LeetCode](https://leetcode.com/) 
 

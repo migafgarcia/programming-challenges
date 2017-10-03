@@ -66,5 +66,6 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 |-----------|----------|------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum) | [two_sum.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/two_sum.py) | Easy |
 | [65. Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/ValidNumber.java) | Hard |
+| [461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | [hamming_distance.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/hamming_distance.py) | Easy |
 
 

@@ -64,6 +64,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 
 | Challenge | Solution | Difficulty | 
 |-----------|----------|------------|
-| [Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/ValidNumber.java) | Hard |
 | [1. Two Sum](https://leetcode.com/problems/two-sum) | [two_sum.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/two_sum.py) | Easy |
+| [65. Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/ValidNumber.java) | Hard |
+
 

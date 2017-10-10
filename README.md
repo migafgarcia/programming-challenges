@@ -69,4 +69,6 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [155. Min Stack](https://leetcode.com/problems/min-stack) | [min_stack.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/min_stack.c) | Easy |
 | [461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | [hamming_distance.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/hamming_distance.py) | Easy |
 
+### [100 Challenge](leetcode/100_challenge/)
+
 

@@ -75,5 +75,6 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 |-----------|----------|------------|------|--------------|
 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [median_of_two_sorted_arrays.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/median_of_two_sorted_arrays.c) | Hard | 10/10/2017 | The problem requested O(log(m+n)) but this solution is O(m+n) |
 | [46. Permutations](https://leetcode.com/problems/permutations) | [permutations.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/permutations.c) | Medium | 14/10/2017 |  |
+| [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [max_path_sum.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/max_path_sum.c) | Hard | 15/10/2017 | [Solution](https://discuss.leetcode.com/topic/7325/a-very-concise-recursive-solution) by [shichaotan](https://discuss.leetcode.com/user/shichaotan) |
 
 

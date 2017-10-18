@@ -1,7 +1,15 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 #include "hash_table.h"
+
+static int SIZE = 10000;
+static int DELETED = 10001;
+static int HT_PRIME_1 = 10007;
+static int HT_PRIME_2 = 10301;
+
+static ht_item HT_DELETED_ITEM = {0, 0};
 
 static ht_item* ht_new_item(const int k, const int v) {
     ht_item* i = malloc(sizeof(ht_item));
@@ -13,7 +21,7 @@ static ht_item* ht_new_item(const int k, const int v) {
 ht_hash_table* ht_new() {
     ht_hash_table* ht = malloc(sizeof(ht_hash_table));
 
-    ht->size = 10000;
+    ht->size = SIZE;
     ht->count = 0;
     ht->items = calloc((size_t)ht->size, sizeof(ht_item*));
     return ht;
@@ -76,10 +84,9 @@ int ht_search(ht_hash_table* ht, const int key) {
         item = ht->items[index];
         i++;
     } 
-    return NULL;
+    return DELETED;
 }
 
-static ht_item HT_DELETED_ITEM = {NULL, NULL};
 
 
 void ht_delete(ht_hash_table* ht, const int key) {
@@ -98,4 +105,12 @@ void ht_delete(ht_hash_table* ht, const int key) {
         i++;
     } 
     ht->count--;
+}
+
+void ht_print(ht_hash_table* h) {
+    for(int i = 0; i < h->size; i++) {
+        if(h->items) {
+            printf("%d\n", h->items[0]->key);
+        }
+    }
 }

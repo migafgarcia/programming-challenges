@@ -1,33 +1,24 @@
-#include<stdio.h>
-
-int main(int argc, char** argv) {
-
-}
-
 int findUnsortedSubarray(int* nums, int size) {
-    int global = 0;
-	int current = -1;
+    int beg = -1, end = -2;
 
-    for(int i = 0; i  < size - 1; i++) {
-    	if(current == -1) {
-			if(nums[i] > nums[i + 1]) {
-				current = 2;
-			}
+    int max = nums[0];
+
+    for(int i = 0; i < size; i++) {
+    	max = nums[i] > max ? nums[i] : max;
+    	if(nums[i] < max) {
+    		end = i;
     	}
-
-    	else {
-			if(nums[i] > nums[i + 1]) {
-				global = current;
-				current = -1;
-			}
-			else {
-				current++;
-			}
-    	}
-
-
-		printf("%d\n", current);
     }
-    
-    
+
+    int min = nums[size - 1];
+	for(int i = size - 1; i >= 0; i--) {
+		min = nums[i] < min ? nums[i] : min;
+    	if(nums[i] > min) {
+    		beg = i;
+    	}
+    }
+
+   	printf("%d %d\n", beg, end);
+
+    return end - beg + 1;
 }

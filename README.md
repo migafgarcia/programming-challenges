@@ -13,6 +13,8 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [max_path_sum.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/max_path_sum.c) | Hard | 15/10/2017 | [Solution](https://discuss.leetcode.com/topic/7325/a-very-concise-recursive-solution) by [shichaotan](https://discuss.leetcode.com/user/shichaotan) |
 | [146. LRU Cache](https://leetcode.com/problems/lru-cache) | [lru_cache.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/lru_cache.c) | Hard | 19/10/2017 | Hash table with linked elements, organized through pointer manipulation |
 | [581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | [shortest_unsorted_continuos_subarray.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/shortest_unsorted_continuos_subarray.c) | Easy | 21/03/2018 | Inspired by [compton_scatter](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/103057/Java-O(n)-Time-O(1)-Space) solution |
+| [136. Single Number](https://leetcode.com/problems/single-number/) | [single_number.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/single_number.cpp) | Easy | 04/04/2018 |  |
+
 
 
 ## [CodinGame](https://www.codingame.com/)

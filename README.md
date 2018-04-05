@@ -15,6 +15,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | [shortest_unsorted_continuos_subarray.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/shortest_unsorted_continuos_subarray.c) | Easy | 21/03/2018 | Inspired by [compton_scatter](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/103057/Java-O(n)-Time-O(1)-Space) solution |
 | [136. Single Number](https://leetcode.com/problems/single-number/) | [single_number.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/single_number.cpp) | Easy | 04/04/2018 |  |
 | [338. Counting Bits](https://leetcode.com/problems/counting-bits/) | [counting_bits.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/counting_bits.cpp) | Medium | 04/04/2018 |  |
+| [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) |  | Medium | 05/04/2018 | [Solution](https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89407/Python-Documented-solution-in-O(n*n)-time-that-is-easy-to-understand) |
 
 
 

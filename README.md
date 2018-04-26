@@ -24,6 +24,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) | 1 |
 | [Day 2: I Was Told There Would Be No Math](http://adventofcode.com/2015/day/2) | [day_2_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_a.cpp) [day_2_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_b.cpp) | 2 |
 | [Day 3: Perfectly Spherical Houses in a Vacuum](http://adventofcode.com/2015/day/3) | [day_3_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_a.cpp) [day_3_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_b.cpp) | 3 |
+| [Day 4: The Ideal Stocking Stuffer](http://adventofcode.com/2015/day/4) | [day_4_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_a.cpp) [day_4_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_b.cpp) | 4 |
 
 
 ## [CodinGame](https://www.codingame.com/)

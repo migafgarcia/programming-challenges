@@ -18,6 +18,9 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) |  | Medium | 05/04/2018 | [Solution](https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89407/Python-Documented-solution-in-O(n*n)-time-that-is-easy-to-understand) |
 
 
+## [Advent of Code 2015](http://adventofcode.com/2015)
+| Challenge | Solution | Difficulty | 
+| [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) | 1 |
 
 
 ## [CodinGame](https://www.codingame.com/)

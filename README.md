@@ -20,6 +20,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 
 ## [Advent of Code 2015](http://adventofcode.com/2015)
 | Challenge | Solution | Difficulty | 
+|-----------|----------|------------|
 | [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) | 1 |
 
 

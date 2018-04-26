@@ -22,6 +22,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | Challenge | Solution | Difficulty | 
 |-----------|----------|------------|
 | [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) | 1 |
+| [Day 2: I Was Told There Would Be No Math](http://adventofcode.com/2015/day/2) | [day_2_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_a.cpp) [day_2_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_b.cpp) | 2 |
 
 
 ## [CodinGame](https://www.codingame.com/)

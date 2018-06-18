@@ -19,12 +19,16 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 
 
 ## [Advent of Code 2015](http://adventofcode.com/2015)
-| Challenge | Solution | Difficulty | 
+| Challenge | Solution | Day | 
 |-----------|----------|------------|
 | [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) | 1 |
 | [Day 2: I Was Told There Would Be No Math](http://adventofcode.com/2015/day/2) | [day_2_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_a.cpp) [day_2_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_b.cpp) | 2 |
 | [Day 3: Perfectly Spherical Houses in a Vacuum](http://adventofcode.com/2015/day/3) | [day_3_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_a.cpp) [day_3_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_b.cpp) | 3 |
 | [Day 4: The Ideal Stocking Stuffer](http://adventofcode.com/2015/day/4) | [day_4_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_a.cpp) [day_4_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_b.cpp) | 4 |
+| [Day 5: Doesn't He Have Intern-Elves For This?](http://adventofcode.com/2015/day/5) | [day_5_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_a.cpp) [day_5_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_b.cpp) | 5 |
+| [Day 6: Probably a Fire Hazard](http://adventofcode.com/2015/day/6) | [day_6_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_a.cpp) [day_6_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_b.cpp) | 6 |
+
+
 
 
 ## [CodinGame](https://www.codingame.com/)

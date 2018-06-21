@@ -27,6 +27,8 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Day 4: The Ideal Stocking Stuffer](http://adventofcode.com/2015/day/4) | [day_4_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_a.cpp) [day_4_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_b.cpp) | 4 |
 | [Day 5: Doesn't He Have Intern-Elves For This?](http://adventofcode.com/2015/day/5) | [day_5_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_a.cpp) [day_5_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_b.cpp) | 5 |
 | [Day 6: Probably a Fire Hazard](http://adventofcode.com/2015/day/6) | [day_6_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_a.cpp) [day_6_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_b.cpp) | 6 |
+| [Day 7: Some Assembly Required](http://adventofcode.com/2015/day/6) | [day_7_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_7_a.cpp) [day_7_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_7_b.cpp) | 7 |
+
 
 
 

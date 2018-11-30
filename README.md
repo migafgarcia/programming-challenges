@@ -18,6 +18,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) |  | Medium | 05/04/2018 | [Solution](https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89407/Python-Documented-solution-in-O(n*n)-time-that-is-easy-to-understand) |
 | [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [MergeTwoBinaryTrees.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/MergeTwoBinaryTrees.kt) | Easy | 03/10/2018 | |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [GenerateParentesis.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/GenerateParentesis.kt) | Medium | 03/10/2018 | |
+| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [AddTwoNumbers.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/AddTwoNumbers.kt) [AddTwoNumbers2.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/AddTwoNumbers2.kt)  | Medium | 30/11/2018 | Version 2 was a failed attempt. Runtime: 252 ms, faster than 89.36% of Kotlin online submissions for Add Two Numbers. |
 
 
 

@@ -19,6 +19,8 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [MergeTwoBinaryTrees.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/MergeTwoBinaryTrees.kt) | Easy | 03/10/2018 | |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [GenerateParentesis.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/GenerateParentesis.kt) | Medium | 03/10/2018 | |
 | [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [AddTwoNumbers.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/AddTwoNumbers.kt) [AddTwoNumbers2.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/AddTwoNumbers2.kt)  | Medium | 30/11/2018 | Version 2 was a failed attempt. Runtime: 252 ms, faster than 89.36% of Kotlin online submissions for Add Two Numbers. |
+| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LongestSubstringWithoutRepeatingCharacters.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/LongestSubstringWithoutRepeatingCharacters.kt) | Medium | 30/11/2018 | Runtime: 384 ms, faster than 27.11% of Kotlin online submissions for Longest Substring Without Repeating Characters... :( |
+
 
 
 

@@ -107,3 +107,8 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | [hamming_distance.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/hamming_distance.py) | Easy |
 
 
+## [Advent of Code 2018](http://adventofcode.com/2015)
+| Challenge | Part 1 | Part2 | 
+|-----------|--------|-------|
+| [Day 1: Chronal Calibration](http://adventofcode.com/2018/day/1) | [day_1_a.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_1_a.kt) | [day_1_b.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_1_b.kt) |
+

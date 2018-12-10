@@ -1,6 +1,6 @@
 # Programming Challenges
 
-### [LeetCode](https://leetcode.com/)
+## [LeetCode](https://leetcode.com/)
 
 | Challenge | Solution | Difficulty | Observations |
 |-----------|----------|------------|--------------|
@@ -22,19 +22,6 @@
 | [581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | [shortest_unsorted_continuos_subarray.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/shortest_unsorted_continuos_subarray.c) | Easy | Inspired by [compton_scatter](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/103057/Java-O(n)-Time-O(1)-Space) solution |
 | [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [MergeTwoBinaryTrees.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/MergeTwoBinaryTrees.kt) | Easy | |
 
-
-
-
-## [Advent of Code 2015](http://adventofcode.com/2015)
-| Challenge | Solution | Day | 
-|-----------|----------|------------|
-| [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) | 1 |
-| [Day 2: I Was Told There Would Be No Math](http://adventofcode.com/2015/day/2) | [day_2_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_a.cpp) [day_2_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_b.cpp) | 2 |
-| [Day 3: Perfectly Spherical Houses in a Vacuum](http://adventofcode.com/2015/day/3) | [day_3_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_a.cpp) [day_3_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_b.cpp) | 3 |
-| [Day 4: The Ideal Stocking Stuffer](http://adventofcode.com/2015/day/4) | [day_4_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_a.cpp) [day_4_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_b.cpp) | 4 |
-| [Day 5: Doesn't He Have Intern-Elves For This?](http://adventofcode.com/2015/day/5) | [day_5_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_a.cpp) [day_5_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_b.cpp) | 5 |
-| [Day 6: Probably a Fire Hazard](http://adventofcode.com/2015/day/6) | [day_6_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_a.cpp) [day_6_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_b.cpp) | 6 |
-| [Day 7: Some Assembly Required](http://adventofcode.com/2015/day/6) | [day_7_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_7_a.cpp) [day_7_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_7_b.cpp) | 7 |
 
 
 
@@ -100,6 +87,19 @@
 | [Heaps: Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median) | [running_median.c](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/running_median.c) | Hard | 
 | [DP: Coin Change](https://www.hackerrank.com/challenges/ctci-coin-change) | [coin_change.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/coin_change.py) | Hard | 
 | [BFS: Shortest Reach in a Graph](https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach) | [shortest_reach.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/shortest_reach.py) | Hard | 
+
+
+
+## [Advent of Code 2015](http://adventofcode.com/2015)
+| Challenge | Part 1 | Part2 | 
+|-----------|--------|-------|
+| [Day 1: Not Quite Lisp](http://adventofcode.com/2015/day/1) | [day_1_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_a.cpp) | [day_1_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_1_b.cpp) |
+| [Day 2: I Was Told There Would Be No Math](http://adventofcode.com/2015/day/2) | [day_2_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_a.cpp) | [day_2_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_2_b.cpp) |
+| [Day 3: Perfectly Spherical Houses in a Vacuum](http://adventofcode.com/2015/day/3) | [day_3_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_a.cpp) | [day_3_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_3_b.cpp) |
+| [Day 4: The Ideal Stocking Stuffer](http://adventofcode.com/2015/day/4) | [day_4_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_a.cpp) | [day_4_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_4_b.cpp) |
+| [Day 5: Doesn't He Have Intern-Elves For This?](http://adventofcode.com/2015/day/5) | [day_5_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_a.cpp) | [day_5_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_5_b.cpp) |
+| [Day 6: Probably a Fire Hazard](http://adventofcode.com/2015/day/6) | [day_6_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_a.cpp) | [day_6_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_6_b.cpp) |
+| [Day 7: Some Assembly Required](http://adventofcode.com/2015/day/6) | [day_7_a.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_7_a.cpp) | [day_7_b.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2015/day_7_b.cpp) |
 
 
 

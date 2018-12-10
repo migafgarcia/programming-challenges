@@ -1,27 +1,26 @@
 # Programming Challenges
 
-My solutions to various programming challenges around the web, such as [CodinGame](https://www.codingame.com/), [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/) and [Google Code Jam](https://code.google.com/codejam/).
+### [LeetCode](https://leetcode.com/)
 
-WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
-
-### [Top 100 Liked Questions](https://leetcode.com/problemset/top-100-liked-questions/)
-
-| Challenge | Solution | Difficulty | Date | Observations |
-|-----------|----------|------------|------|--------------|
-| [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [median_of_two_sorted_arrays.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/median_of_two_sorted_arrays.c) | Hard | 10/10/2017 | The problem requested O(log(m+n)) but this solution is O(m+n) |
-| [46. Permutations](https://leetcode.com/problems/permutations) | [permutations.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/permutations.c) | Medium | 14/10/2017 |  |
-| [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [max_path_sum.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/max_path_sum.c) | Hard | 15/10/2017 | [Solution](https://discuss.leetcode.com/topic/7325/a-very-concise-recursive-solution) by [shichaotan](https://discuss.leetcode.com/user/shichaotan) |
-| [146. LRU Cache](https://leetcode.com/problems/lru-cache) | [lru_cache.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/lru_cache.c) | Hard | 19/10/2017 | Hash table with linked elements, organized through pointer manipulation |
-| [581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | [shortest_unsorted_continuos_subarray.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/shortest_unsorted_continuos_subarray.c) | Easy | 21/03/2018 | Inspired by [compton_scatter](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/103057/Java-O(n)-Time-O(1)-Space) solution |
-| [136. Single Number](https://leetcode.com/problems/single-number/) | [single_number.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/single_number.cpp) | Easy | 04/04/2018 |  |
-| [338. Counting Bits](https://leetcode.com/problems/counting-bits/) | [counting_bits.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/counting_bits.cpp) | Medium | 04/04/2018 |  |
-| [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) |  | Medium | 05/04/2018 | [Solution](https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89407/Python-Documented-solution-in-O(n*n)-time-that-is-easy-to-understand) |
-| [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [MergeTwoBinaryTrees.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/MergeTwoBinaryTrees.kt) | Easy | 03/10/2018 | |
-| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [GenerateParentesis.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/GenerateParentesis.kt) | Medium | 03/10/2018 | |
-| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [AddTwoNumbers.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/AddTwoNumbers.kt) [AddTwoNumbers2.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/AddTwoNumbers2.kt)  | Medium | 30/11/2018 | Version 2 was a failed attempt. Runtime: 252 ms, faster than 89.36% of Kotlin online submissions for Add Two Numbers. |
-| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LongestSubstringWithoutRepeatingCharacters.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/LongestSubstringWithoutRepeatingCharacters.kt) | Medium | 30/11/2018 | Runtime: 384 ms, faster than 27.11% of Kotlin online submissions for Longest Substring Without Repeating Characters... :( |
-| [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [LongestPalindromicSubstring.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/100_challenge/LongestPalindromicSubstring.kt) | Medium | 02/11/2018 | Temporary, still working on it |
-
+| Challenge | Solution | Difficulty | Observations |
+|-----------|----------|------------|--------------|
+| [1. Two Sum](https://leetcode.com/problems/two-sum) | [two_sum.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/two_sum.py) | Easy | |
+| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [AddTwoNumbers.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/AddTwoNumbers.kt) [AddTwoNumbers2.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/AddTwoNumbers2.kt)  | Medium | Version 2 was a failed attempt. Runtime: 252 ms, faster than 89.36% of Kotlin online submissions for Add Two Numbers. |
+| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LongestSubstringWithoutRepeatingCharacters.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/LongestSubstringWithoutRepeatingCharacters.kt) | Medium | Runtime: 384 ms, faster than 27.11% of Kotlin online submissions for Longest Substring Without Repeating Characters... :( |
+| [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [median_of_two_sorted_arrays.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/median_of_two_sorted_arrays.c) | Hard | The problem requested O(log(m+n)) but this solution is O(m+n) |
+| [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [LongestPalindromicSubstring.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/LongestPalindromicSubstring.kt) | Medium | Temporary, still working on it |
+| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [GenerateParentesis.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/GenerateParentesis.kt) | Medium | |
+| [46. Permutations](https://leetcode.com/problems/permutations) | [permutations.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/permutations.c) | Medium |  |
+| [65. Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/ValidNumber.java) | Hard | |
+| [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [max_path_sum.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/max_path_sum.c) | Hard | [Solution](https://discuss.leetcode.com/topic/7325/a-very-concise-recursive-solution) by [shichaotan](https://discuss.leetcode.com/user/shichaotan) |
+| [136. Single Number](https://leetcode.com/problems/single-number/) | [single_number.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/single_number.cpp) | Easy |  |
+| [146. LRU Cache](https://leetcode.com/problems/lru-cache) | [lru_cache.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/lru_cache.c) | Hard | Hash table with linked elements, organized through pointer manipulation |
+| [155. Min Stack](https://leetcode.com/problems/min-stack) | [min_stack.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/min_stack.c) | Easy | |
+| [338. Counting Bits](https://leetcode.com/problems/counting-bits/) | [counting_bits.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/counting_bits.cpp) | Medium |  |
+| [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) |  | Medium | [Solution](https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89407/Python-Documented-solution-in-O(n*n)-time-that-is-easy-to-understand) |
+| [461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | [hamming_distance.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/hamming_distance.py) | Easy | |
+| [581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray) | [shortest_unsorted_continuos_subarray.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/shortest_unsorted_continuos_subarray.c) | Easy | Inspired by [compton_scatter](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/103057/Java-O(n)-Time-O(1)-Space) solution |
+| [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [MergeTwoBinaryTrees.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/MergeTwoBinaryTrees.kt) | Easy | |
 
 
 
@@ -40,7 +39,6 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 
 
 
-
 ## [CodinGame](https://www.codingame.com/)
 
 | Challenge | Solution | Difficulty | 
@@ -55,6 +53,8 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [There is no Spoon - Episode 1](https://www.codingame.com/training/medium/there-is-no-spoon-episode-1) | [ThereIsNoSpoonEpisode1.java](https://github.com/migafgarcia/programming-challenges/blob/master/codingame/medium/ThereIsNoSpoonEpisode1.java) | Medium | 
 
 
+
+
 ## [/r/dailyprogrammer/](https://www.reddit.com/r/dailyprogrammer/)
 
 | Challenge | Solution | Difficulty | 
@@ -63,11 +63,15 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Escaping a dangerous maze](https://www.reddit.com/r/dailyprogrammer/comments/5vwwzg/20170224_challenge_303_hard_escaping_a_dangerous/) | [MazeRunner.java](https://github.com/migafgarcia/programming-challenges/blob/master/r_dailyprogrammer/hard/MazeRunner.java) | Hard | 
 
 
+
+
 ## [Google Code Jam](https://code.google.com/codejam/)
 
 | Challenge | Solution | Difficulty | 
 |-----------|----------|------------|
 | [Alphabet Cake](https://code.google.com/codejam/contest/5304486/dashboard) | [alphabet_cake.py](https://github.com/migafgarcia/programming-challenges/blob/master/google_code_jam/round_1a_2017/alphabet_cake/alphabet_cake.py) | Round 1A 2017 |
+
+
 
 
 ## [HackerRank](https://www.hackerrank.com/)
@@ -97,14 +101,7 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [DP: Coin Change](https://www.hackerrank.com/challenges/ctci-coin-change) | [coin_change.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/coin_change.py) | Hard | 
 | [BFS: Shortest Reach in a Graph](https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach) | [shortest_reach.py](https://github.com/migafgarcia/programming-challenges/blob/master/hackerrank/cracking_the_coding_interview/shortest_reach.py) | Hard | 
 
-## [LeetCode](https://leetcode.com/) 
 
-| Challenge | Solution | Difficulty | 
-|-----------|----------|------------|
-| [1. Two Sum](https://leetcode.com/problems/two-sum) | [two_sum.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/two_sum.py) | Easy |
-| [65. Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/ValidNumber.java) | Hard |
-| [155. Min Stack](https://leetcode.com/problems/min-stack) | [min_stack.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/min_stack.c) | Easy |
-| [461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | [hamming_distance.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/all/hamming_distance.py) | Easy |
 
 
 ## [Advent of Code 2018](http://adventofcode.com/2018)
@@ -120,4 +117,3 @@ WARNING: MAY USE MORE CPU CYCLES THAN NEEDED
 | [Day 8: Memory Maneuver](http://adventofcode.com/2018/day/8) | [day_8_a.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_8_a.kt) | [day_8_b.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_8_b.kt) |
 | [Day 9: Marble Mania](http://adventofcode.com/2018/day/9) | [day_9_a.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_9_a.kt) | [day_9_b.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_9_b.kt) |
 | [Day 10: The Stars Align](http://adventofcode.com/2018/day/10) | [day_10_a.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_10_a.kt) | [day_10_b.kt](https://github.com/migafgarcia/programming-challenges/blob/master/advent_of_code/2018/solutions/day_10_b.kt) |
-

@@ -19,6 +19,7 @@
 | [136. Single Number](https://leetcode.com/problems/single-number/) | [single_number.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/single_number.cpp) | Easy |  |
 | [146. LRU Cache](https://leetcode.com/problems/lru-cache) | [lru_cache.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/lru_cache.c) | Hard | Hash table with linked elements, organized through pointer manipulation |
 | [155. Min Stack](https://leetcode.com/problems/min-stack) | [min_stack.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/min_stack.c) | Easy | |
+| [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [OddEvenLinkedList.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/OddEvenLinkedList.kt) | Medium | |
 | [338. Counting Bits](https://leetcode.com/problems/counting-bits/) | [counting_bits.cpp](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/counting_bits.cpp) | Medium |  |
 | [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) |  | Medium | [Solution](https://leetcode.com/problems/queue-reconstruction-by-height/discuss/89407/Python-Documented-solution-in-O(n*n)-time-that-is-easy-to-understand) |
 | [461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | [hamming_distance.py](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/hamming_distance.py) | Easy | |

@@ -11,6 +11,7 @@
 | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [LongestPalindromicSubstring.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/LongestPalindromicSubstring.kt) | Medium | Temporary, still working on it |
 | [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [ReverseInteger.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/ReverseInteger.kt) | Easy |  |
 | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [ContainerWithMostWater.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/ContainerWithMostWater.java) | Medium | Runtime: 4 ms, faster than 99.26% |
+| [15. 3Sum](https://leetcode.com/problems/3sum/) | [3Sum.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/3Sum.kt) | Medium | |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [GenerateParentesis.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/GenerateParentesis.kt) | Medium | |
 | [46. Permutations](https://leetcode.com/problems/permutations) | [permutations.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/permutations.c) | Medium |  |
 | [65. Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/ValidNumber.java) | Hard | |

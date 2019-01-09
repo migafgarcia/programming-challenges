@@ -14,6 +14,7 @@
 | [15. 3Sum](https://leetcode.com/problems/3sum/) | [3Sum.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/3Sum.kt) | Medium | |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [GenerateParentesis.kt](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/GenerateParentesis.kt) | Medium | |
 | [46. Permutations](https://leetcode.com/problems/permutations) | [permutations.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/permutations.c) | Medium |  |
+| [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [GroupAnagrams.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/GroupAnagrams.java) | Medium |  |
 | [65. Valid Number](https://leetcode.com/problems/valid-number) | [ValidNumber.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/ValidNumber.java) | Hard | |
 | [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [SetMatrixZeroes.java](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/SetMatrixZeroes.java) | Medium | |
 | [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [max_path_sum.c](https://github.com/migafgarcia/programming-challenges/blob/master/leetcode/max_path_sum.c) | Hard | [Solution](https://discuss.leetcode.com/topic/7325/a-very-concise-recursive-solution) by [shichaotan](https://discuss.leetcode.com/user/shichaotan) |

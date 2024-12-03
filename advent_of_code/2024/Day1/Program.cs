@@ -1,11 +1,17 @@
 ﻿
-var input = await File.ReadAllLinesAsync(@"day1part1.txt");
+using Common;
 
-Part1(input);
-Part2(input);
+var testInput = await File.ReadAllLinesAsync("input.test");
+var input = await File.ReadAllLinesAsync("input.txt");
+
+Utils.RunPuzzle(Part1, testInput, 11);
+Utils.RunPuzzle(Part2, testInput,31);
+Utils.RunPuzzle(Part1, input, 1320851);
+Utils.RunPuzzle(Part2, input, 26859182);
+
 return;
 
-void Part1(string[] strings)
+int Part1(string[] strings)
 {
     
     var leftList = new int[strings.Length];
@@ -28,10 +34,10 @@ void Part1(string[] strings)
         sum += Math.Abs(rightList[i] - leftList[i]);
     }
 
-    Console.WriteLine(sum);
+    return sum;
 }
 
-void Part2(string[] strings)
+int Part2(string[] strings)
 {
     var leftList = new Dictionary<int, int>();
     var rightList = new Dictionary<int, int>();
@@ -61,10 +67,10 @@ void Part2(string[] strings)
             continue;
         }
 
-        score += (leftItem * rightCount) * leftCount;
+        score += leftItem * rightCount * leftCount;
     }
-    
-    Console.WriteLine(score);
+
+    return score;
 
 }
 

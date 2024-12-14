@@ -1,100 +1,124 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using System.Text.RegularExpressions;
-using Common;
+﻿using Common;
 
 var testInput = await File.ReadAllLinesAsync("input.test");
 var input = await File.ReadAllLinesAsync("input.txt");
 
 Utils.RunPuzzle(Part1, testInput, 143);
-Utils.RunPuzzle(Part1, input);
-// Utils.RunPuzzle(Part2, testInput, 9);
-// Utils.RunPuzzle(Part2, input, 1880);
+Utils.RunPuzzle(Part1, input, 5713);
+Utils.RunPuzzle(Part2, testInput, 123);
+Utils.RunPuzzle(Part2, input);
 
 return;
 
 int Part1(string[] strings)
 {
 
-    var graph = new Dictionary<int, HashSet<int>>();
+    var dictionary = new Dictionary<int, HashSet<int>>();
+    
+    var orderingRules = strings
+        .TakeWhile(x => !string.IsNullOrEmpty(x))
+        .Select(x=> x.Split('|').Select(int.Parse).ToArray())
+        .ToList();
 
-    foreach (var s in strings.TakeWhile(x => !string.IsNullOrEmpty(x)))
+    foreach (var split in orderingRules)
     {
-        var split = s.Split('|').Select(int.Parse).ToArray();
-        if (split.Length == 2)
+        var key = split[0];
+        var value = split[1];
+
+        if (!dictionary.ContainsKey(key))
         {
-            var key = split[0];
-            var value = split[1];
-
-            if (!graph.ContainsKey(key))
-            {
-                graph.Add(key, []);
-            }
+            dictionary.Add(key, []);
+        }
             
-            if (!graph.ContainsKey(value))
-            {
-                graph.Add(value, []);
-            }
+        dictionary[key].Add(value);
+    }
 
-            graph[key].Add(value);
+    var updates = strings
+        .SkipWhile(x => !string.IsNullOrEmpty(x))
+        .Skip(1)
+        .Select(x => x.Split(',').Select(int.Parse).ToList())
+        .ToList();
+
+    return 
+        updates
+            .Where(pages => IsUpdateCorrect(dictionary, pages))
+            .Sum(pages => pages[pages.Count / 2]);
+}
+
+bool IsUpdateCorrect(Dictionary<int, HashSet<int>> rules, List<int> update)
+{
+    for (var i = 0; i < update.Count; i++)
+    {
+        var a = update[i];
+        for (var j = i + 1; j < update.Count; j++)
+        {
+            var b = update[j];
+
+            if (rules.TryGetValue(b, out var set) && set.Contains(a))
+            {
+                return false;
+            }
         }
     }
     
-    var reachableNodes = GetAllReachableNodes(graph);
-    var result = 0;
-    foreach (var s in strings.SkipWhile(x => !string.IsNullOrEmpty(x)).Skip(1))
-    {
-        var pages = s.Split(',').Select(int.Parse).ToArray();
-        var valueToAdd = pages[pages.Length / 2];
-        for (var i = 1; i < pages.Length; i++)
-        {
-            var current = pages[i];
-            var prev = pages[i - 1];
-
-            if (reachableNodes.TryGetValue(prev, out var nodes) && !nodes.Contains(current))
-            {
-                valueToAdd = 0;
-            }
-            
-        }
-
-        result += valueToAdd;
-
-    }
-
-    return result;
-}
-
-
-static Dictionary<int, HashSet<int>> GetAllReachableNodes(Dictionary<int, HashSet<int>> graph)
-{
-    var result = new Dictionary<int, HashSet<int>>();
-
-    foreach (var node in graph.Keys)
-    {
-        var visited = new HashSet<int>();
-        DFS(graph, node, visited);
-        result[node] = visited;
-    }
-
-    return result;
-}
-
-static void DFS(Dictionary<int, HashSet<int>> graph, int current, HashSet<int> visited)
-{
-    if (visited.Contains(current)) return;
-
-    visited.Add(current);
-
-    if (graph.TryGetValue(current, out var neighbors))
-    {
-        foreach (var neighbor in neighbors)
-        {
-            DFS(graph, neighbor, visited);
-        }
-    }
+    return true;
 }
 
 int Part2(string[] strings)
 {
-    throw new NotImplementedException();
+    var dictionary = new Dictionary<int, HashSet<int>>();
+    
+    var orderingRules = strings
+        .TakeWhile(x => !string.IsNullOrEmpty(x))
+        .Select(x=> x.Split('|').Select(int.Parse).ToArray())
+        .ToList();
+    
+    foreach (var split in orderingRules)
+    {
+        var key = split[0];
+        var value = split[1];
+
+        if (!dictionary.ContainsKey(key))
+        {
+            dictionary.Add(key, []);
+        }
+            
+        dictionary[key].Add(value);
+    }
+    
+    var result = 0;
+
+    var updates = strings
+        .SkipWhile(x => !string.IsNullOrEmpty(x))
+        .Skip(1)
+        .Select(x => x.Split(',').Select(int.Parse).ToArray())
+        .ToList();
+    
+    foreach (var pages in updates)
+    {
+        var currentUpdate = new List<int>();
+        for (var j = 0; j < pages.Length; j++)
+        {
+            var page = pages[j];
+            for (var i = 0; i < j + 1; i++)
+            {
+                var testList = new List<int>(currentUpdate);
+                testList.Insert(i, page);
+
+                if (IsUpdateCorrect(dictionary, testList))
+                {
+                    currentUpdate.Insert(i, page);
+                    break;
+                }
+            }
+        }
+
+        if (!currentUpdate.SequenceEqual(pages))
+        {
+            result += currentUpdate[currentUpdate.Count / 2];
+        }
+    }
+
+    return result;
 }
+

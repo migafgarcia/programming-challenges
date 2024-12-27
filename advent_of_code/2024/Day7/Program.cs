@@ -4,7 +4,7 @@ using FluentAssertions;
 
 var rawTestInput = await File.ReadAllLinesAsync("input.test");
 var rawInput = await File.ReadAllLinesAsync("input.txt");
-//
+
 Utils.RunPuzzle(Part1, rawTestInput, result =>
 {
     result.Should().Be(3749);

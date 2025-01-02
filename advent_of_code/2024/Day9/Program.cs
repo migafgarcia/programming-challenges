@@ -132,10 +132,10 @@ long Part2(string[] strings)
         
         // Replace current file with free space
 
-        node.Value = new FreeSpaceSegment()
+        node.Value = new FreeSpaceSegment
         {
             StartPosition = fileSegment.StartPosition,
-            Length = fileSegment.Length,
+            Length = fileSegment.Length
         };
         
         node = node.Previous;

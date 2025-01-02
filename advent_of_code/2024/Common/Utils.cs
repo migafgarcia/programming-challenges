@@ -30,27 +30,6 @@ public static class Utils
 
     }
     
-    //
-    // public static void RunPuzzle(Func<string[], int> puzzleFunc, string[] puzzleInput, Action<int> testAction)
-    // {
-    //     
-    //     var stopwatch = new Stopwatch();
-    //
-    //     stopwatch.Start();
-    //
-    //     var result = puzzleFunc(puzzleInput);
-    //
-    //     stopwatch.Stop();
-    //
-    //     var elapsed = stopwatch.Elapsed;
-    //
-    //     testAction.Invoke(result);
-    //     
-    //     Console.WriteLine($"[{Assembly.GetCallingAssembly().GetName().Name}] Result: {result}, Elapsed time: {elapsed.TotalMilliseconds} ms");
-    //
-    // }
-    
-    
     public static void RunPuzzle<T>(Func<string[], T> puzzleFunc, string[] puzzleInput, Action<T> testAction)
     {
         
@@ -70,6 +49,4 @@ public static class Utils
 
     }
 
-
-    
 }

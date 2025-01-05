@@ -3,7 +3,7 @@ using System.Runtime.InteropServices.JavaScript;
 
 namespace PuzzleRunner.Day11;
 
-public class Day11 : Puzzle
+public class Day11 : Puzzle<long>
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {
@@ -13,77 +13,117 @@ public class Day11 : Puzzle
 
     public Dictionary<string[], long?> Part2TestCases => new()
     {
-        // { File.ReadAllLines("Day11/test_input.in"), null },
-        { File.ReadAllLines("Day11/puzzle_input.in"), null }
+        { File.ReadAllLines("Day11/test_input.in"), 65601038650482 },
+        { File.ReadAllLines("Day11/puzzle_input.in"), 218811774248729 }
     };
 
     public long Part1(string[] input)
     {
-        return ProcessIterations(input, 25);
+        var memo = new Dictionary<(int, long), long>();
+
+        var stones = input[0]
+            .Split(' ')
+            .Select(long.Parse)
+            .ToList();
+
+
+        return stones.Aggregate<long, long>(0, (current, stone) => current + ProcessIteration(0, stone, 25, memo));
     }
 
     public long Part2(string[] input)
     {
-        return ProcessIterations(input, 75);
+        var memo = new Dictionary<(int, long), long>();
+
+        var stones = input[0]
+            .Split(' ')
+            .Select(long.Parse)
+            .ToList();
+
+        return stones.Aggregate<long, long>(0, (current, stone) => current + ProcessIteration(0, stone, 75, memo));
     }
 
-    private static long ProcessIterations(string[] input, int nIterations)
+    private long ProcessIteration(int currentIteration, long value, int nIterations,
+        Dictionary<(int, long), long> memo)
     {
-        object _lockObj = new object();
-
-        var list = new List<long[]> { input[0].Split(' ').Select(long.Parse).ToArray() };
-        
-        for (var i = 0; i < nIterations; i++)
+        if (memo.ContainsKey((currentIteration, value)))
         {
-            
-            Console.WriteLine($"Iteration { i + 1}");
-
-            var stonesToAddAll = new List<long>();
-
-            Parallel.ForEach(list,
-                new ParallelOptions()
-                {
-                    MaxDegreeOfParallelism = 8
-                },
-                stones =>
-            {
-                var stonesToAdd = new List<long>();
-
-                for (var j = 0; j < stones.Length; j++)
-                {
-                    var len = (int)Math.Floor(Math.Log10(stones[j])) + 1;
-                    if (stones[j] == 0)
-                    {
-                        stones[j] = 1;
-                    }
-                    else if (len % 2 == 0)
-                    {
-                        var divisor = 10;
-                        while (stones[j] / divisor > divisor) divisor *= 10;
-                        var leftValue = stones[j] / divisor;
-                        var rightValue = stones[j] % divisor;
-                        stones[j] = leftValue;
-                        stonesToAdd.Add(rightValue);
-                    }
-                    else
-                    {
-                        stones[j] *= 2024;
-                    }
-
-                }
-                
-                lock (_lockObj)
-                {
-                    stonesToAddAll.AddRange(stonesToAdd);
-                }
-                
-                
-            });
-            
-            list.Add(stonesToAddAll.ToArray());
-            
+            return memo[(currentIteration, value)];
         }
-        
-        return list.Sum(l => l.Length);
+
+        // exit early
+        if (currentIteration + 1 == nIterations)
+        {
+            if (value == 0)
+            {
+                return 1;
+            }
+
+            return NumDigits(value) % 2 == 0 ? 2 : (long)1;
+        }
+
+        if (value == 0)
+        {
+            var result = ProcessIteration(currentIteration + 1, 1, nIterations, memo);
+            memo.Add((currentIteration, value), result);
+            return result;
+        }
+
+        var numDigits = NumDigits(value);
+        if (numDigits % 2 == 0)
+        {
+            if (currentIteration + 1 == nIterations)
+            {
+                return 2;
+            }
+
+            var divisor = Pow(10, numDigits / 2);
+
+            var leftValue = value / divisor;
+            var rightValue = value % divisor;
+
+            var result = ProcessIteration(currentIteration + 1, leftValue, nIterations, memo) +
+                         ProcessIteration(currentIteration + 1, rightValue, nIterations, memo);
+
+            memo.Add((currentIteration, value), result);
+            return result;
+        }
+        else
+        {
+            var result = ProcessIteration(currentIteration + 1, value * 2024, nIterations, memo);
+            memo.Add((currentIteration, value), result);
+            return result;
+        }
+    }
+
+    private int NumDigits(long value)
+    {
+        var numDigits = 1;
+        var temp = value;
+        while ((temp /= 10) > 0) numDigits++;
+        return numDigits;
+    }
+
+    private static long Pow(long baseValue, int exponent)
+    {
+        if (exponent == 0)
+            return 1;
+
+        if (baseValue == 0)
+            return 0;
+
+        long result = 1;
+
+        while (exponent > 0)
+        {
+            if ((exponent & 1) == 1)
+            {
+                result *= baseValue;
+            }
+
+            baseValue *= baseValue;
+            exponent >>= 1;
+        }
+
+        return result;
     }
 }

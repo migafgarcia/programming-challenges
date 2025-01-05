@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace PuzzleRunner.Day3;
 
-public class Day3 : Puzzle
+public class Day3 : Puzzle<long>
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {

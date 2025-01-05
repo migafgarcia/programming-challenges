@@ -1,13 +1,13 @@
 namespace PuzzleRunner;
 
-public interface Puzzle
+public interface Puzzle<T> where T : struct
 {
     
-    public Dictionary<string[], long?> Part1TestCases { get; }
+    public Dictionary<string[], T?> Part1TestCases { get; }
     
-    public Dictionary<string[], long?> Part2TestCases { get; }
+    public Dictionary<string[], T?> Part2TestCases { get; }
     
-    public long Part1(string[] input);
-    public long Part2(string[] input);
+    public T Part1(string[] input);
+    public T Part2(string[] input);
     
 }

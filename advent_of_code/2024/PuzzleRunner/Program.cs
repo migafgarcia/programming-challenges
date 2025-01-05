@@ -12,16 +12,16 @@ class Program
         var day11 = new Day11.Day11();
         
         
-        // foreach (var (input, output) in day11.Part1TestCases)
-        // {
-        //     Utils.RunPuzzle(day11.Part1, input, result =>
-        //     {
-        //         if (output.HasValue)
-        //         {
-        //             result.Should().Be(output.Value);
-        //         }
-        //     });
-        // }
+        foreach (var (input, output) in day11.Part1TestCases)
+        {
+            Utils.RunPuzzle(day11.Part1, input, result =>
+            {
+                if (output.HasValue)
+                {
+                    result.Should().Be(output.Value);
+                }
+            });
+        }
         
         foreach (var (input, output) in day11.Part2TestCases)
         {
@@ -36,7 +36,7 @@ class Program
 
         //
         // var puzzles = Assembly.GetEntryAssembly()!.GetTypes()
-        //     .Where(t => t.GetTypeInfo().IsClass && typeof(Puzzle).IsAssignableFrom(t))
+        //     .Where(t => t.GetTypeInfo().IsClass && typeof(Puzzle<>).IsAssignableFrom(t))
         //     .OrderBy(t => t.FullName)
         //     .Select(t => Activator.CreateInstance(t) as Puzzle);
         //
@@ -46,9 +46,9 @@ class Program
         //     {
         //         Utils.RunPuzzle(puzzle.Part1, input, result =>
         //         {
-        //             if (output.HasValue)
+        //             if (output != null)
         //             {
-        //                 result.Should().Be(output.Value);
+        //                 result.Should().Be(output);
         //             }
         //         });
         //     }
@@ -57,9 +57,9 @@ class Program
         //     {
         //         Utils.RunPuzzle(puzzle.Part2, input, result =>
         //         {
-        //             if (output.HasValue)
+        //             if (output != null)
         //             {
-        //                 result.Should().Be(output.Value);
+        //                 result.Should().Be(output);
         //             }
         //         });
         //     }

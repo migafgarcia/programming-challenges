@@ -1,6 +1,6 @@
 namespace PuzzleRunner.Day9;
 
-public class Day9 : Puzzle
+public class Day9 : Puzzle<long>
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {

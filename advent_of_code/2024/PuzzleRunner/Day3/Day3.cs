@@ -2,18 +2,18 @@ using System.Text.RegularExpressions;
 
 namespace PuzzleRunner.Day3;
 
-public class Day3 : Puzzle<long>
+public class Day3 : Puzzle
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {
-        { File.ReadAllLines("Day3/test_input.in"), 161 },
-        { File.ReadAllLines("Day3/puzzle_input.in"), 160672468 }
+        { File.ReadAllLines("Day3/test_input.txt"), 161 },
+        { File.ReadAllLines("Day3/puzzle_input.txt"), 160672468 }
     };
     
     public Dictionary<string[], long?> Part2TestCases => new()
     {
-        { File.ReadAllLines("Day3/test_input.in"), 48 },
-        { File.ReadAllLines("Day3/puzzle_input.in"), 84893551 }
+        { File.ReadAllLines("Day3/test_input.txt"), 48 },
+        { File.ReadAllLines("Day3/puzzle_input.txt"), 84893551 }
     };
     public long Part1(string[] input)
     {

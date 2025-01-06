@@ -1,17 +1,17 @@
 namespace PuzzleRunner.Day9;
 
-public class Day9 : Puzzle<long>
+public class Day9 : Puzzle
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {
-        { File.ReadAllLines("Day9/test_input.in"), 1928 },
-        { File.ReadAllLines("Day9/puzzle_input.in"), 6463499258318 }
+        { File.ReadAllLines("Day9/test_input.txt"), 1928 },
+        { File.ReadAllLines("Day9/puzzle_input.txt"), 6463499258318 }
     };
 
     public Dictionary<string[], long?> Part2TestCases => new()
     {
-        { File.ReadAllLines("Day9/test_input.in"), 2858 },
-        { File.ReadAllLines("Day9/puzzle_input.in"), 6493634986625 }
+        { File.ReadAllLines("Day9/test_input.txt"), 2858 },
+        { File.ReadAllLines("Day9/puzzle_input.txt"), 6493634986625 }
     };
 
     public long Part1(string[] input)
@@ -31,9 +31,9 @@ public class Day9 : Puzzle<long>
 
             var freeSpaceSegment = memorySegment as FreeSpaceSegment;
 
-            var spaceToFill = freeSpaceSegment.Length;
+            var spaceToFill = freeSpaceSegment!.Length;
 
-            while (memory.Last.Value is not FileSegment)
+            while (memory.Last?.Value is not FileSegment)
             {
                 memory.RemoveLast();
             }
@@ -104,11 +104,11 @@ public class Day9 : Puzzle<long>
             }
 
             // Update data on current file
-            var freeSpaceSegment = eligibleNode.Value;
+            var freeSpaceSegment = eligibleNode?.Value;
 
-            fileSegment.StartPosition = freeSpaceSegment.StartPosition;
+            fileSegment!.StartPosition = freeSpaceSegment!.StartPosition;
 
-            eligibleNode.Value = fileSegment;
+            eligibleNode!.Value = fileSegment;
 
             // Check if there is remaining free space
             if (freeSpaceSegment.Length - fileSegment.Length >= 0)
@@ -144,13 +144,13 @@ public class Day9 : Puzzle<long>
         freeSpaceSegment = null;
         while (currentNode != fileSegment)
         {
-            if (currentNode.Value is FreeSpaceSegment && currentNode.Value.Length >= fileSegment.Value.Length)
+            if (currentNode?.Value is FreeSpaceSegment && currentNode.Value.Length >= fileSegment.Value.Length)
             {
                 freeSpaceSegment = currentNode;
                 return true;
             }
 
-            currentNode = currentNode.Next;
+            currentNode = currentNode?.Next;
         }
 
         return false;
@@ -240,4 +240,4 @@ public class FileSegment : MemorySegment
     public int FileId { get; set; }
 }
 
-class FreeSpaceSegment : MemorySegment;
+internal class FreeSpaceSegment : MemorySegment;

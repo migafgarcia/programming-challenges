@@ -1,17 +1,17 @@
 namespace PuzzleRunner.Day8;
 
-public class Day8 : Puzzle<long>
+public class Day8 : Puzzle
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {
-        { File.ReadAllLines("Day8/test_input.in"), 14 },
-        { File.ReadAllLines("Day8/puzzle_input.in"), 323 }
+        { File.ReadAllLines("Day8/test_input.txt"), 14 },
+        { File.ReadAllLines("Day8/puzzle_input.txt"), 323 }
     };
 
     public Dictionary<string[], long?> Part2TestCases => new()
     {
-        { File.ReadAllLines("Day8/test_input.in"), 34 },
-        { File.ReadAllLines("Day8/puzzle_input.in"), 1077 }
+        { File.ReadAllLines("Day8/test_input.txt"), 34 },
+        { File.ReadAllLines("Day8/puzzle_input.txt"), 1077 }
     };
 
     public long Part1(string[] input)

@@ -3,18 +3,18 @@ using System.Runtime.InteropServices.JavaScript;
 
 namespace PuzzleRunner.Day11;
 
-public class Day11 : Puzzle<long>
+public class Day11 : Puzzle
 {
     public Dictionary<string[], long?> Part1TestCases => new()
     {
-        { File.ReadAllLines("Day11/test_input.in"), 55312 },
-        { File.ReadAllLines("Day11/puzzle_input.in"), 183248 }
+        { File.ReadAllLines("Day11/test_input.txt"), 55312 },
+        { File.ReadAllLines("Day11/puzzle_input.txt"), 183248 }
     };
 
     public Dictionary<string[], long?> Part2TestCases => new()
     {
-        { File.ReadAllLines("Day11/test_input.in"), 65601038650482 },
-        { File.ReadAllLines("Day11/puzzle_input.in"), 218811774248729 }
+        { File.ReadAllLines("Day11/test_input.txt"), 65601038650482 },
+        { File.ReadAllLines("Day11/puzzle_input.txt"), 218811774248729 }
     };
 
     public long Part1(string[] input)

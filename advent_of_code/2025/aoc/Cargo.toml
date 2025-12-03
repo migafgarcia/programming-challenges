@@ -5,3 +5,11 @@ edition = "2024"
 
 [dependencies]
 nom = "8"
+
+[dev-dependencies]
+divan = "0.1.21"
+
+[[bench]]
+name = "aoc"
+harness = false
+path = "src/benchmark.rs"

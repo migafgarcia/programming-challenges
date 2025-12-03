@@ -21,7 +21,7 @@ fn digit_parser(s: &str) -> IResult<&str, u64> {
     map_res(recognize(digit1), str::parse).parse(s)
 }
 
-pub fn day2part1(s: &str) -> u64 {
+pub fn part1(s: &str) -> u64 {
 
     let (_, ranges) = input_parser(s).unwrap();
     let mut result: u64 = 0;
@@ -50,6 +50,45 @@ pub fn day2part1(s: &str) -> u64 {
 }
 
 
-pub fn day2part2(s: &str) -> u64 {
-    todo!()
+pub fn part2(s: &str) -> u64 {
+
+    let (_, ranges) = input_parser(s).unwrap();
+    let mut result: u64 = 0;
+
+    for (from, to) in ranges {
+        'num: for num in from..=to {
+
+            let len = num_len(num);
+
+            'parts: for n_parts in 2..=len {
+
+                // check if number is divisible by 2
+                if len % n_parts != 0 {
+                    continue;
+                }
+
+                let part_size = len / n_parts;
+                let mut remaining_num = num;
+
+                let mut previous_part :Option<u64> = None;
+
+                while remaining_num > 0 {
+                    let current_part = remaining_num % 10_u64.pow(part_size);
+                    remaining_num = remaining_num / 10_u64.pow(part_size);
+
+                    if previous_part.is_some_and(|x| x != current_part) {
+                        continue 'parts;
+                    }
+
+                    previous_part = Some(current_part);
+                }
+
+                result += num;
+                continue 'num;
+            }
+
+        }
+    }
+    result
+
 }

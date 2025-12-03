@@ -1,5 +1,5 @@
 
-pub fn day1part1(input: &str) -> i32 {
+pub fn part1(input: &str) -> i32 {
     let mut current: i32 = 50;
     let mut result = 0;
 
@@ -34,7 +34,7 @@ pub fn day1part1(input: &str) -> i32 {
 }
 
 
-pub fn day1part2(input: &str) -> i32 {
+pub fn part2(input: &str) -> i32 {
     let mut current: i32 = 50;
     let mut result = 0;
 

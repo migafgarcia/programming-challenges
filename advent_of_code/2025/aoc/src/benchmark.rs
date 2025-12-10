@@ -15,7 +15,6 @@ fn main() { divan::main(); }
         ("day1.txt", day1::part2 as fn(&str) -> i32),
         ("day3.txt", day3::part1 as fn(&str) -> i32),
         ("day3.txt", day3::part1_n2 as fn(&str) -> i32),
-        // ("day3.txt", day3::part2 as fn(&str) -> i32),
     ]
 )]
 fn bench_all_i32(bencher: Bencher, (input_file, func): (&'static str, fn(&str) -> i32)) {
@@ -34,6 +33,7 @@ fn bench_all_i32(bencher: Bencher, (input_file, func): (&'static str, fn(&str) -
     args = [
         ("day2.txt", day2::part1 as fn(&str) -> u64),
         ("day2.txt", day2::part2 as fn(&str) -> u64),
+        ("day3.txt", day3::part2 as fn(&str) -> u64),
     ]
 )]
 fn bench_all_u64(bencher: Bencher, (input_file, func): (&'static str, fn(&str) -> u64)) {

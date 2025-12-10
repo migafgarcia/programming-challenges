@@ -92,3 +92,40 @@ pub fn part2(s: &str) -> u64 {
     result
 
 }
+
+
+#[cfg(test)]
+mod day2_tests {
+    use std::fs;
+    use std::path::Path;
+    use crate::global;
+    use super::*;
+
+    static SAMPLE_INPUT: &str = "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124";
+
+    #[test]
+    fn part1_sample() {
+        let result = part1(SAMPLE_INPUT);
+        assert_eq!(result, 1227775554);
+    }
+
+    #[test]
+    fn part1_puzzle() {
+        let contents = fs::read_to_string(Path::new(global::INPUT_BASE_PATH).join("day2.txt")).unwrap();
+        let result = part1(contents.as_str());
+        assert_eq!(result, 23701357374);
+    }
+
+    #[test]
+    fn part2_sample() {
+        let result = part2(SAMPLE_INPUT);
+        assert_eq!(result, 4174379265);
+    }
+
+    #[test]
+    fn part2_puzzle() {
+        let contents = fs::read_to_string(Path::new(global::INPUT_BASE_PATH).join("day2.txt")).unwrap();
+        let result = part2(contents.as_str());
+        assert_eq!(result, 34284458938);
+    }
+}

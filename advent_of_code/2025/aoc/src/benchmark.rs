@@ -5,6 +5,7 @@ use divan::{Bencher, black_box};
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 mod global;
 
 fn main() { divan::main(); }
@@ -15,6 +16,8 @@ fn main() { divan::main(); }
         ("day1.txt", day1::part2 as fn(&str) -> i32),
         ("day3.txt", day3::part1 as fn(&str) -> i32),
         ("day3.txt", day3::part1_n2 as fn(&str) -> i32),
+        ("day4.txt", day4::part1 as fn(&str) -> i32),
+        ("day4.txt", day4::part2 as fn(&str) -> i32),
     ]
 )]
 fn bench_all_i32(bencher: Bencher, (input_file, func): (&'static str, fn(&str) -> i32)) {
